@@ -1,0 +1,32 @@
+/* src/components/Head/Head.module.css */
+.header {
+ height: 20vh; /* 20% высоты экрана */
+ background: #333;
+ color: white;
+}
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ height: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.logo {
+ font-size: 1.8rem;
+ font-weight: bold;
+}
+.navList {
+ display: flex;
+ list-style: none;
+ gap: 2rem;
+}
+.navList a {
+ color: white;
+ text-decoration: none;
+ font-size: 1.1rem;
+}
+.navList a:hover {
+ text-decoration: underline;
+}

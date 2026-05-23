@@ -1,0 +1,25 @@
+.section {
+ background-color: lavender;
+ padding: 1rem;
+ border-right: 2px solid #777;
+ height: 100%;
+ overflow-y: auto;
+}
+.title {
+ color: #333;
+ margin-bottom: 1rem;
+ font-size: 1.2rem;
+}
+.imageContainer {
+ margin-bottom: 1rem;
+ text-align: center;
+}
+.image {
+ max-width: 100%;
+ height: auto;
+}
+.text {
+ color: #444;
+ font-size: 0.9rem;
+ line-height: 1.5;
+}

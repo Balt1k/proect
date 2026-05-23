@@ -1,0 +1,12 @@
+.main {
+ flex: 1;
+ background-color: #eee;
+}
+.gridContainer {
+ display: grid;
+ grid-template-columns: 20% 60% 20%;
+ height: 100%;
+ max-width: 1400px;
+ margin: 0 auto;
+ background-color: white;
+}

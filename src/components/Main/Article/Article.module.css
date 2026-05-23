@@ -1,0 +1,19 @@
+.article {
+ background-color: white;
+ padding: 1.5rem;
+ border-right: 2px solid yellow;
+ height: 100%;
+ overflow-y: auto;
+}
+.title {
+ color: #212529;
+ margin-bottom: 1.5rem;
+ font-size: 1.8rem;
+}
+.content {
+ color: #495057;
+ line-height: 1.8;
+}
+.content p {
+ margin-bottom: 1rem;
+}

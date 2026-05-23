@@ -1,0 +1,38 @@
+.aside {
+ background-color: #e9ecef;
+ padding: 1rem;
+ height: 100%;
+ overflow-y: auto; /* полоса прокрутки появляется только при переполнении контента*/
+}
+.title {
+ color: #495057;
+ margin-bottom: 1rem;
+ font-size: 1.2rem;
+ border-bottom: 2px solid #adb5bd;
+ padding-bottom: 0.5rem;
+}
+.widget {
+ margin-bottom: 1.5rem;
+ padding: 0.8rem;
+ background-color: #eee;
+ border-radius: 6px;
+}
+.widget h4 {
+ color: #111;
+ margin-bottom: 0.5rem;
+ font-size: 1rem;
+}
+.widget ul {
+ list-style: none;
+ padding-left: 0;
+}
+.widget li {
+ padding: 0.3rem 0;
+ color: #666;
+ font-size: 0.9rem;
+ border-bottom: 1px dashed #ccc;
+ cursor: pointer;
+}
+.widget li:hover {
+ color: #007bff;
+}
