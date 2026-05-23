@@ -1,19 +1,41 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './Article.module.css';
+import NewsPage from '../../../pages/NewsPage';
+import AboutPage from '../../../pages/AboutPage';
+import ContactsPage from '../../../pages/ContactsPage';
+import NotFoundPage from '../../../pages/NotFoundPage';
 
-const Article = ({ content }) => {
- // Временное содержимое по умолчанию
- const defaultContent = {
- title: "Основная часть с картинками и текстом",
- text: "Это основной контент страницы (60% возможно в будущем 80% ширины). Здесь будет отображаться информация в зависимости от выбранного пункта меню."
+const Article = () => {
+const location = useLocation();
+
+ const getContent = () => {
+    switch(location.pathname) {
+        case '/news':
+            return NewsPage();
+            case '/about':
+                return AboutPage();
+                case '/contacts':
+                    return ContactsPage();
+                    case '/':
+                        return {
+                        title: "главная",
+                        text: "какой-то текст"
+                        };
+                        default:
+                            return NotFoundPage();
+    }
  };
- const displayContent = content || defaultContent;
+
+ const content = getContent();
+
  return (
  <article className={styles.article}>
-    <h2 className={styles.title}>{displayContent.title}</h2>
+    <h2 className={styles.title}>{content.title}</h2>
     <div className={styles.content}>
-        <p>{displayContent.text}</p>
-        <p>Этот компонент будет изменять своё содержимое при клике на ссылки в шапке сайта.</p>
+        {content.text.split('/n').map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+        ))}
  </div>
  </article>
  );
