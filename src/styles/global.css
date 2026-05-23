@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+#root {
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
