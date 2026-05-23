@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from './Head.module.css';
-
+import myImage from '../assets/Images/logo.png';
 const Head = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <h1 className={styles.logo}>будущий логотип</h1>
+                
+                <Link to="/"><img src={myImage} className={styles.logo} /></Link>
+                
                 <nav className={styles.nav}>
                   <ul className={styles.navList}> 
                     <li><Link to="/">Главная</Link></li>
@@ -14,6 +16,10 @@ const Head = () => {
                     <li><Link to="/contacts">Контакты</Link></li>
                   </ul>   
                 </nav>
+                
+                <div className={styles.lang}>
+                    <button className={styles.langButton}>RU</button>
+                    </div>
             </div>
         </header>
     )

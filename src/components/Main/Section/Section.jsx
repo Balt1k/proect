@@ -6,7 +6,7 @@ const Section = () => {
     return (
         <section className={styles.section}>
             <h3 className={styles.title}>Раздел (Section)</h3>
-            <div className={styles.imagecontainer}>
+            <div className={styles.imageContainer}>
                 <img
                 src={myImage}
                 alt="картинка"
