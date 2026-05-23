@@ -1,10 +1,12 @@
 import React from 'react';
 
 const AboutPage = () => {
-    return {
-        title: "О проекте",
-        text: "итоговый проект в рамках дисциплины сайтостроения"
-    };
+    return (
+        <div>
+      <h2>О проекте</h2>
+      <p>итоговый проект в рамках дисциплины сайтостроения</p>
+    </div>
+    );
 };
 
 export default AboutPage;

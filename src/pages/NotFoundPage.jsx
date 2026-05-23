@@ -1,8 +1,10 @@
 import React from 'react';
 const NotFoundPage = () => {
- return {
- title: "404 - Страница не найдена",
- text: "Извините, запрашиваемая страница не существует."
- };
+ return (
+ <div>
+      <h2>404 - Страница не найдена</h2>
+      <p>Извините, запрашиваемая страница не существует.</p>
+    </div>
+ );
 };
 export default NotFoundPage;

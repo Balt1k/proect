@@ -1,9 +1,11 @@
 import React from 'react';
 
 const ContactsPage = () => {
-return {
-    title: "Контакты",
-    text: "текст для связи (емеил и номер)"
-};
+return (
+     <div>
+      <h2>Контакты</h2>
+      <p>текст для связи (емеил и номер)</p>
+    </div>
+);
 };
 export default ContactsPage;

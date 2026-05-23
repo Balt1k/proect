@@ -1,7 +1,6 @@
 .article {
- background-color: white;
+ background: linear-gradient(to bottom, #ffffff, #b3b3b3);
  padding: 1.5rem;
- border-right: 2px solid yellow;
  height: 100%;
  overflow-y: auto;
 }
@@ -9,6 +8,7 @@
  color: #212529;
  margin-bottom: 1.5rem;
  font-size: 1.8rem;
+ text-align: center;
 }
 .content {
  color: #495057;
@@ -16,4 +16,43 @@
 }
 .content p {
  margin-bottom: 1rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gridRow {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Автоматическое чередование: каждая нечётная строка меняет порядок */
+.gridRow:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.gridImage, .gridText {
+  flex: 1;
+}
+
+.gridImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.gridText p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .gridRow, .gridRow:nth-child(odd) {
+    flex-direction: column !important;
+  }
 }

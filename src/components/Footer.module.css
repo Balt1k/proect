@@ -1,7 +1,6 @@
-/* src/components/Footer/Footer.module.css */
 .footer {
- height: 15vh; /* 15% высоты экрана */
- background: #333;
+ height: 15vh; 
+ background: rgb(10, 10, 10);
  color: white;
 }
 .container {
