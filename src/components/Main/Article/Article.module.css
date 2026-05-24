@@ -30,7 +30,6 @@
   align-items: center;
 }
 
-/* Автоматическое чередование: каждая нечётная строка меняет порядок */
 .gridRow:nth-child(odd) {
   flex-direction: row-reverse;
 }

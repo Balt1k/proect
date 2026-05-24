@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    align-items: start;
+    overflow: hidden;
+}
+
+.imageContainer {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.TextContainer {
+
+}
+.Text {
+ text-align: center;
+}
+.AuthorContainer {
+margin: 30px;
+}
+h2 {
+    text-align: center;
+}
