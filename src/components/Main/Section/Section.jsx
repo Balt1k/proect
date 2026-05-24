@@ -5,7 +5,6 @@ import myImage from "../../../assets/Images/i2.png";
 const Section = () => {
     return (
         <section className={styles.section}>
-            <h3 className={styles.title}>Раздел (Section)</h3>
             <div className={styles.imageContainer}>
                 <img
                 src={myImage}

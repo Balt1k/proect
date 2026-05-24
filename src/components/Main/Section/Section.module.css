@@ -1,8 +1,8 @@
 .section {
  background: linear-gradient(to bottom, #ffffff, #b3b3b3);
- padding: 1rem;
  height: 100%;
- overflow-y: auto;
+ display: flex;
+ flex-direction: column;
 }
 .title {
  color: #333;
@@ -10,13 +10,22 @@
  font-size: 1.2rem;
 }
 .imageContainer {
- margin-bottom: 1rem;
+position: sticky;
+top: 0;
  text-align: center;
- height: auto;
+ height: 100vh;
+ width: auto;
+ display: flex;
+ min-height: 0;
+ overflow: hidden;
 }
 .image {
  max-width: 100%;
- height: auto;
+ max-height: 100%;
+ height: 100%;
+ width: 100%;
+ object-fit: fill;
+ display: block;
 }
 .text {
  color: #444;
