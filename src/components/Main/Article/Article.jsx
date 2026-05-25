@@ -22,11 +22,11 @@ const blocks = [
     images: [Car1, Car2, Car3],
   },
   {
-    text: 'Текст второго блока (картинка справа)',
+    text: 'Текст второго блока',
     images: [Car4, Car5, Car6],
   },
   {
-    text: 'Третий блок – снова картинка слева',
+    text: 'Третий блок',
     images: [Car9, Car7, Car8],
   },
 ];
@@ -45,12 +45,12 @@ const Article = () => {
       case '/':
         return (
           <>
-            <h2 className={styles.title}>Главная</h2>
+            <h2 className={styles.title}>Реализованные проекты</h2>
             <div className={styles.grid}>
               {blocks.map((block, index) => (
                 <div className={styles.gridRow} key={index}>
                   <div className={styles.gridImage}>
-                    <Carousel images={block.images} autoPlayInterval={4000} />
+                    <Carousel images={block.images} autoPlayInterval={7000} />
                   </div>
                   <div className={styles.gridText}>
                     <p>{block.text}</p>
