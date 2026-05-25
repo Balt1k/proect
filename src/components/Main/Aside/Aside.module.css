@@ -1,35 +1,39 @@
 .aside {
- background: linear-gradient(to bottom, #ffffff, #b3b3b3);
- padding: 1rem;
- height: 100%;
- overflow-y: auto;
+    background: linear-gradient(to bottom, #ffffff, #b3b3b3);
+    padding: 1rem;
+    height: 100%;
 }
+
 .title {
- color: #495057;
- margin-bottom: 1rem;
- font-size: 1.2rem;
- padding-bottom: 0.5rem;
+    color: #495057;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
 }
-.widget {
- margin-bottom: 1.5rem;
- padding: 0.8rem;
- background-color: #eee;
+
+.Nav {
+    margin-bottom: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 1rem;
 }
-.widget h4 {
- color: #111;
- margin-bottom: 0.5rem;
- font-size: 1rem;
+
+.Nav ul {
+    list-style: none;
 }
-.widget ul {
- list-style: none;
- padding-left: 0;
+
+.Nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
 }
-.widget li {
- padding: 0.3rem 0;
- color: #666;
- font-size: 0.9rem;
- cursor: pointer;
-}
-.widget li:hover {
- color: #007bff;
+
+.Nav a:hover {
+    background: #e9ecef;
+    text-decoration: underline;
 }

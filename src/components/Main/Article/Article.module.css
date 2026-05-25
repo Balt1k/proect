@@ -4,9 +4,24 @@
  height: 100%;
  overflow-y: auto;
 }
+.blockTitle {
+ text-align: center;
+ font-style: italic;
+}
+.blockDescription {
+font-style: italic;
+text-align: center;
+}
+.MainText {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 32px;
+}
 .title {
  color: #212529;
  margin-bottom: 1.5rem;
+ margin-top: 3rem;
  font-size: 1.8rem;
  text-align: center;
 }

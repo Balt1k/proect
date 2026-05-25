@@ -5,9 +5,7 @@ import myImage from '../assets/Images/i5.png';
 const ContactsPage = () => {
   return (
     <div className={Styles.AuthorContainer}>
-      {/* Двухколоночная секция: контакты + фото */}
       <div className={Styles.mainRow}>
-        {/* Левая колонка: текст и коробочки с телефоном и почтой */}
         <div className={Styles.contactSection}>
           <p>Вы можете связаться с нами по телефону</p>
           <div className={Styles.ContactPhone}>
@@ -19,17 +17,15 @@ const ContactsPage = () => {
           </div>
         </div>
 
-        {/* Правая колонка: фотография */}
         <div className={Styles.photoSection}>
           <img
             src={myImage}
-            alt="Команда или офис"
+            alt="картинка"
             className={Styles.contactPhoto}
           />
         </div>
       </div>
 
-      {/* Блок с авторами (неизменён) */}
       <h2 className={Styles.authorsTitle}>Над сайтом работали:</h2>
       <div className={Styles.GridContainer}>
         <div className={Styles.cell}>Андронов А.И.</div>

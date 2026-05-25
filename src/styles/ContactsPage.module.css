@@ -4,7 +4,6 @@
   padding: 2rem 1rem;
 }
 
-/* Двухколоночный макет */
 .mainRow {
   display: flex;
   gap: 2rem;
@@ -13,19 +12,16 @@
   margin-bottom: 3rem;
 }
 
-/* Левая колонка с контактами */
 .contactSection {
   flex: 1;
   min-width: 200px;
 }
 
-/* Правая колонка с фото */
 .photoSection {
   flex: 1;
   min-width: 200px;
 }
 
-/* Коробочка для телефона */
 .ContactPhone {
   background-color: #f5f5f5;
   border-radius: 12px;
@@ -40,7 +36,6 @@
   transform: translateY(-2px);
 }
 
-/* Коробочка для почты */
 .ContactMail {
   background-color: #f5f5f5;
   border-radius: 12px;
@@ -55,7 +50,6 @@
   transform: translateY(-2px);
 }
 
-/* Стили для текста внутри коробочек */
 .ContactPhone p,
 .ContactMail p {
   margin: 0;
@@ -64,7 +58,6 @@
   color: black;
 }
 
-/* Фотография */
 .contactPhoto {
   width: 100%;
   height: auto;
@@ -73,7 +66,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Заголовок блока авторов */
 .authorsTitle {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -81,7 +73,6 @@
   text-align: center;
 }
 
-/* Сетка авторов (таблица) */
 .GridContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -94,7 +85,7 @@
 .cell {
   padding: 14px 12px;
   border-bottom: 1px solid #edf2f7;
-  border-right: 1px solid #edf2f7;       /* почти белый, но мягче */
+  border-right: 1px solid #edf2f7;
   font-size: 0.95rem;
   color: #1e2a3e;
   transition: background-color 0.15s ease;

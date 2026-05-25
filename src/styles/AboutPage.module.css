@@ -5,12 +5,15 @@
 }
 
 .imageContainer {
+    display: flex;
+    justify-content: center;
     max-width: 100%;
     overflow: hidden;
+    margin-top: 200px;
 }
 
 .image {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   display: block;
 }

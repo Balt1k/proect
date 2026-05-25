@@ -4,7 +4,6 @@ import NewsPage from '../../../pages/NewsPage';
 import AboutPage from '../../../pages/AboutPage';
 import ContactsPage from '../../../pages/ContactsPage';
 import NotFoundPage from '../../../pages/NotFoundPage';
-import myImage from '../../../assets/Images/i3.png';
 import Carousel from '../../Carousel/Carousel';
 import Car1 from '../../../assets/Images/car1.png';
 import Car2 from '../../../assets/Images/car2.png';
@@ -18,15 +17,18 @@ import Car9 from '../../../assets/Images/car9.png';
 
 const blocks = [
   {
-    text: 'Текст первого блока',
+    title: 'Низкий шкаф-буфет в авторском стиле',
+    description: 'Корпус изготовлен из массива дерева и окрашен в насыщенный сине-бирюзовый цвет с полупрозрачным эффектом. Фасады выполнены со стеклянными вставками и декоративной металлической ковкой. Благодаря невысокой посадке шкаф хорошо подходит как для гостиной, так и для зоны ТВ или столовой.',
     images: [Car1, Car2, Car3],
   },
   {
-    text: 'Текст второго блока',
+    title: 'Современная кухня',
+    description: 'Современная кухня, выполненная в глубоких синих оттенках с акцентом на фактуру и благородные материалы. Матовые фасады в классической рамочной фрезеровке сочетаются с каменной столешницей и выразительным фартуком с природным рисунком, создавая атмосферу сдержанной элегантности. Линейная композиция и встроенная техника позволили сохранить чистую геометрию пространства и максимальную функциональность. Теплая подсветка рабочей зоны подчеркивает глубину цвета и текстуру материалов, а латунная фурнитура добавляет интерьеру изысканный характер.',
     images: [Car4, Car5, Car6],
   },
   {
-    text: 'Третий блок',
+    title: 'Рабочая зона и зоны хранения в детской',
+    description: 'Функциональная детская комната, выполненная в светлой минималистичной гамме с акцентом на удобство и эргономику. Центральным элементом стала встроенная мебельная композиция вокруг окна, объединяющая рабочую зону, системы хранения и шкафы для одежды. Белые матовые фасады визуально расширяют пространство и создают ощущение легкости, а продуманная организация позволяет сохранить порядок и комфорт для ребенка.',
     images: [Car9, Car7, Car8],
   },
 ];
@@ -45,7 +47,10 @@ const Article = () => {
       case '/':
         return (
           <>
-            <h2 className={styles.title}>Реализованные проекты</h2>
+            <h2 className={styles.MainText}>
+              Наша мебель - это настоящее произведение искусства
+            </h2>
+            <h3 className={styles.title}>Реализованные проекты</h3>
             <div className={styles.grid}>
               {blocks.map((block, index) => (
                 <div className={styles.gridRow} key={index}>
@@ -53,7 +58,8 @@ const Article = () => {
                     <Carousel images={block.images} autoPlayInterval={7000} />
                   </div>
                   <div className={styles.gridText}>
-                    <p>{block.text}</p>
+                    <h4 className={styles.blockTitle}>{block.title}</h4>
+                    <p className={styles.blockDescription}>{block.description}</p>
                   </div>
                 </div>
               ))}
