@@ -44,6 +44,8 @@ const Article = () => {
         return <AboutPage />;
       case '/contacts':
         return <ContactsPage />;
+        case '/news':
+          return <NewsPage />
       case '/':
         return (
           <>
