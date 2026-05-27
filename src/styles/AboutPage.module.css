@@ -18,7 +18,10 @@
   display: block;
 }
 .TextContainer {
-
+ border: 2px, solid , black;
+ padding: 12px;
+ border-radius: 16px;
+ margin-top: 10px;
 }
 .Text {
  text-align: center;

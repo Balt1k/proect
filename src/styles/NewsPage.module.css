@@ -1,3 +1,23 @@
 .page {
-    
+
+}
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+.mainText{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5vh;
+}
+.secondText{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+font-size: 24px;
+margin-top: 10vh;
+margin-bottom: 40px;
 }
