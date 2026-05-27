@@ -7,7 +7,7 @@ const ContactsPage = () => {
     <div className={Styles.AuthorContainer}>
       <div className={Styles.mainRow}>
         <div className={Styles.contactSection}>
-          <p>Вы можете связаться с нами по телефону</p>
+          <p>Вы можете связаться с нами по телефону (отвечаем на звонки и SMS, так же мы есть в Telegram, watsapp и MAX)</p>
           <div className={Styles.ContactPhone}>
             <p>+7 (999) 999-99-99</p>
           </div>
@@ -30,16 +30,16 @@ const ContactsPage = () => {
       <div className={Styles.GridContainer}>
         <div className={Styles.cell}>Андронов А.И.</div>
         <div className={Styles.cell}>Программист</div>
-        <div className={Styles.cell}>Написание сайта и логики</div>
+        <div className={Styles.cell}>androno@sfedu.ru</div>
         <div className={Styles.cell}>Кравцова Д.А.</div>
         <div className={Styles.cell}>Тестировщик</div>
-        <div className={Styles.cell}>Проведение тестов</div>
+        <div className={Styles.cell}>dakravtsova@sfedu.ru</div>
         <div className={Styles.cell}>Березюк И.А.</div>
-        <div className={Styles.cell}>роль</div>
-        <div className={Styles.cell}>Создание концепции сайта</div>
+        <div className={Styles.cell}>Администратор</div>
+        <div className={Styles.cell}>ibereziuk@sfedu.ru</div>
         <div className={Styles.cell}>Воробьев А.А.</div>
-        <div className={Styles.cell}>роль</div>
-        <div className={Styles.cell}>Создание дизайна сайта</div>
+        <div className={Styles.cell}>Дизайнер</div>
+        <div className={Styles.cell}>artevo@sfedu.ru</div>
       </div>
     </div>
   );

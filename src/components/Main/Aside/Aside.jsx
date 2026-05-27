@@ -8,9 +8,9 @@ const Aside = () => {
             <nav className={styles.Nav}>
                 <p>Панель навигации</p>
                 <ul>
-                    <li><Link to="/">Главная</Link></li>
-                    <li><Link to="/about">О проекте</Link></li>
-                    <li><Link to="/contacts">Контакты</Link></li>
+                    <li><Link to="/">Продукты и услуги</Link></li>
+                    <li><Link to="/about">Об авторе</Link></li>
+                    <li><Link to="/contacts">Обратная связь</Link></li>
                 </ul>
             </nav>
         </aside>

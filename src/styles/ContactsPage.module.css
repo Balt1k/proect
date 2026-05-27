@@ -76,7 +76,6 @@
 .GridContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid #d4dcec;
   border-radius: 16px;
   overflow: hidden;
   color: white;
@@ -84,9 +83,6 @@
 
 .cell {
   padding: 14px 12px;
-  border-bottom: 1px solid #edf2f7;
-  border-right: 1px solid #edf2f7;
   font-size: 0.95rem;
   color: #1e2a3e;
-  transition: background-color 0.15s ease;
 }
