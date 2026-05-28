@@ -1,22 +1,23 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { useState } from 'react'
-import  Head  from './components/Head';
+import { LanguageProvider } from './context/LanguageContext';
+import Head from './components/Head';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import './styles/global.css'
-function App() {
-  const [count, setCount] = useState(0)
+import './styles/global.css';
 
+function App() {
   return (
-    <Router>
-    <div className='app'>
-      <Head />
-      <Main />
-      <Footer />
-    </div>
-    </Router>
-  )
+    <LanguageProvider>
+      <Router>
+        <div className="app">
+          <Head />
+          <Main />
+          <Footer />
+        </div>
+      </Router>
+    </LanguageProvider>
+  );
 }
 
-export default App
+export default App;
