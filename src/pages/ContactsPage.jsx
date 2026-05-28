@@ -4,6 +4,8 @@ import myImage from '../assets/Images/i5.png';
 
 const ContactsPage = () => {
   return (
+    <>
+    <h2>Обратная связь</h2>
     <div className={Styles.AuthorContainer}>
       <div className={Styles.mainRow}>
         <div className={Styles.contactSection}>
@@ -42,6 +44,7 @@ const ContactsPage = () => {
         <div className={Styles.cell}>artevo@sfedu.ru</div>
       </div>
     </div>
+    </>
   );
 };
 
