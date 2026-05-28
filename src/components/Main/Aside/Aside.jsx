@@ -11,7 +11,7 @@ const Aside = () => {
                     <li><Link to="/">Продукты и услуги (главная)</Link></li>
                     <li><Link to="/about">Об авторе</Link></li>
                     <li><Link to="/contacts">Обратная связь</Link></li>
-                    <li><Link to="/news">новости</Link></li>
+                    <li><Link to="/news">Новости</Link></li>
                 </ul>
             </nav>
         </aside>
