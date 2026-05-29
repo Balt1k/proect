@@ -12,9 +12,7 @@ const Section = () => {
                 className={styles.image}
                 />
             </div>
-            <p className={styles.text}>
-                {/*текст*/}
-            </p>
+
         </section>
     );
 };
