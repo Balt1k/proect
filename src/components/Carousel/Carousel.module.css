@@ -64,3 +64,35 @@
 .dot.active {
   background: white;
 }
+@media (max-width: 768px) {
+  .btn {
+    font-size: 1rem;
+    padding: 0.3em 0.5em;
+  }
+
+  .dots {
+    bottom: 5px;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.2em 0.4em;
+  }
+
+  .dots {
+    gap: 4px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+}

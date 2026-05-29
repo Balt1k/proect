@@ -21,3 +21,30 @@ font-size: 24px;
 margin-top: 10vh;
 margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .mainText {
+    font-size: 24px;
+    margin: 3vh 1rem;
+  }
+
+  .secondText {
+    font-size: 18px;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    padding: 0 1rem;
+  }
+
+  .imageContainer img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainText {
+    font-size: 20px;
+  }
+  .secondText {
+    font-size: 16px;
+  }
+}

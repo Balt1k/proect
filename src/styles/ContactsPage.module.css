@@ -86,3 +86,61 @@
   font-size: 0.95rem;
   color: #1e2a3e;
 }
+@media (max-width: 768px) {
+  .AuthorContainer {
+    padding: 1rem;
+  }
+
+  .mainRow {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contactSection,
+  .photoSection {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .contactPhoto {
+    max-width: 100%;
+  }
+
+  .authorsTitle {
+    font-size: 1.5rem;
+  }
+
+  .GridContainer {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+  }
+
+  .cell {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .cell:nth-child(3n) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .ContactPhone,
+  .ContactMail {
+    padding: 8px 16px;
+  }
+
+  .ContactPhone p,
+  .ContactMail p {
+    font-size: 0.85rem;
+  }
+
+  .authorsTitle {
+    font-size: 1.3rem;
+  }
+}

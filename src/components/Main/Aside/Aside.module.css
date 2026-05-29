@@ -45,3 +45,54 @@
     background: #e9ecef;
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .aside {
+    padding: 0.5rem;
+  }
+
+  .Nav {
+    position: static;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .head {
+    font-size: 20px;
+  }
+
+  .Nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .Nav li {
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  .Nav a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .Nav ul {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .Nav a {
+    white-space: normal;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.5rem;
+  }
+
+  .head {
+    font-size: 18px;
+  }
+}

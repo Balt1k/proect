@@ -83,3 +83,69 @@ text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .article {
+    padding: 1rem;
+  }
+
+  .MainText {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .MainText2 {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  .gridRow,
+  .gridRow:nth-child(odd) {
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+
+  .gridImage {
+    width: 100%;
+  }
+
+  .gridText {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .blockTitle {
+    font-size: 1.2rem;
+  }
+
+  .blockDescription {
+    font-size: 0.95rem;
+  }
+
+  .lastText {
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .MainText {
+    font-size: 20px;
+  }
+
+  .MainText2 {
+    font-size: 16px;
+  }
+
+  .blockTitle {
+    font-size: 1rem;
+  }
+
+  .blockDescription {
+    font-size: 0.85rem;
+  }
+}

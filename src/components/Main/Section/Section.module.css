@@ -33,3 +33,8 @@ top: 0;
  font-size: 0.9rem;
  line-height: 1.5;
 }
+@media (max-width: 768px) {
+  .section {
+    display: none;
+  }
+}

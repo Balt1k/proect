@@ -10,3 +10,17 @@
  margin: 0 auto;
  background-color: white;
 }
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
